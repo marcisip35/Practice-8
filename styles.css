@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.wrapper{
+    height: 100%;
+    width: 1600px;
+    /* border: 1px dashed red; */
+}
+
+#Hero{
+    min-height: 100vh;
+    width: 100%;
+    background-color: gray;
+
+    display: grid;
+    place-items: center;
+}
+
+#Hero .container{
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    color: whitesmoke;
+    text-shadow: 4px 3px 4px rgba(206,89,55,0.89);
+
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+#Welcome{
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+
+    display: grid;
+    place-items: center;
+}
+
+#Welcome .container{
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    color: whitesmoke;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px blueviolet, 0 -18px 40px #F00;
+
+    display: grid;
+    place-items: center;
+    align-content:center;
+    gap: 25px;
+}
+
+#About{
+    min-height: 100vh;
+    width: 100%;
+    background-color: darkgreen;
+
+    display: grid;
+    place-items: center;
+}
+
+#About .container{
+    height:100%;
+    width:100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#About .container .left{
+    width: 45%;
+}
+
+#About .container .right{
+    width: 45%;
+}
+
+#Contact{
+    min-height: 100vh;
+    width: 100%;
+    background-color: darkslategray;
+
+    display: grid;
+    place-items: center;
+}
+
+#Contact .container{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Contact .container .item{
+    height: 300px;
+    width: 300px;
+}
+
+.item:nth-child(1){
+    background-color: red;
+    transition-delay: 200ms;
+}
+
+.item:nth-child(2){
+    background-color: purple;
+    transition-delay: 400ms;
+}
+
+.item:nth-child(3){
+    background-color: orange;
+    transition-delay: 600ms;
+}
+
+.item:nth-child(4){
+    background-color: green;
+    transition-delay: 800ms;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateX(-100%);
+    transition: ease all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.hiddenTwo{
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateX(100%);
+    transition: all 1.5s;
+}
+
+.showTwo{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.hiddenThree{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: ease 0.2s;
+}
+
+.showThree{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
